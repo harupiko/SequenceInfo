@@ -1,0 +1,44 @@
+body {
+	   color: white;
+	   font-size: 10pt;
+}
+.default { 
+           position: absolute;
+           top: 0px;
+           left: 0px;
+	   color: white;
+ }
+.inputSequence { 
+             position: absolute;
+             top: 30px;
+             left: 35px;
+	     color: white;
+ }
+.textinput { 
+             font-size:10pt;
+ }
+.result { 
+	     color: white;
+	     font-size: 10pt;
+ }
+.options { 
+	     color: white;
+             position: absolute;
+             top: 110px;
+             left: 70px;
+ }
+.info { 
+        position: absolute;
+        top: 80px;
+        left: 70px;
+        font-size:9pt;
+        width: 200px;
+        text-align: center;
+	     color: white;
+ }
+
+#showButton { 
+             position: absolute;
+             top: 60px;
+             left: 5px;
+ }

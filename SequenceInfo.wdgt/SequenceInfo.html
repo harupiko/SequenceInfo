@@ -1,0 +1,65 @@
+<html>
+
+<head>
+
+<!-- The style sheet should be kept in a separate file; it contains the design for the widget -->
+<style type="text/css">
+	@import "SequenceInfo.css";
+</style>
+
+<!-- The JavaScript file contains the logic needed for this widget -->
+<script type='text/javascript' src='SequenceInfo.js' charset='utf-8'/>
+<script type="text/javascript"
+        src="file:///System/Library/WidgetResources/button/genericButton.js"
+        charset="utf-8" />
+
+</head>
+
+<body onload='setup();'
+      oncopy='docopy(event);'
+      >
+  
+  <!-- the widget background -->
+  <img class="default" src="Default.png">  		
+  <div class="inputSequence">
+    <table>
+      <tr>
+	<td class="textinput">5'-</td>
+	<td><input class="textinput" type="text" size="30" name="sequence" id="sequence" onChange='showInfo();' oncopy='docopy(event);' focus()/></td>
+	<td class="textinput">-3'</td>
+      </tr>
+      <tr>
+	<td><span class="result" id="result_prefix"></td>
+	<td><span class="result" id="result"></td>
+	<td><span class="result" id="result_suffix"></td>
+      </tr>
+    </table>
+
+</div>
+
+<table class="info">
+<tr><td>GC%</td><td>length</td><td>A</td><td>T</td><td>G</td><td>C</td></tr>
+<tr>
+<td><span id="GC">-</span></td>
+<td><span id="seqLength">-</span></td>
+<td><span id="countA">-</span></td>
+<td><span id="countT">-</span></td>
+<td><span id="countG">-</span></td>
+<td><span id="countC">-</span></td>
+</tr>
+<table class="options">
+  <tr>
+    <td>
+      <input type="checkbox" name="opt_reverse" id="opt_reverse" checked onChange='showInfo();'/>reverse
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <input type="checkbox" name="opt_complemental" id="opt_complemental" checked onChange='showInfo();'/>complemental
+    </td>
+  </tr>
+</table>
+
+</body>
+
+</html>
